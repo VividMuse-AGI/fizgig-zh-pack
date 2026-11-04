@@ -520,7 +520,7 @@ window.__FIZGIG_ZH_DICT__ = {
   "Runs": "运行",
   "Saved files": "已保存文件",
   "Show": "显示",
-  "Every LoRA and fine-tune in Fizgig's output folders, the runs above included, to search and download. Press Show to list them.": "Fizgig 输出文件夹中的全部 LoRA 与微调（含上方各次运行），供搜索与下载。按 Show 列出。",
+  "Every LoRA and fine-tune in Fizgig's output folders, the runs above included, to search and download. Press Show to list them.": "Fizgig 输出文件夹中的全部 LoRA 与微调（含上方各次运行），供搜索与下载。按「显示」列出。",
   "Saved:": "保存时间：",
   "Any time": "任意时间",
   "In the last 24 hours": "最近 24 小时",
@@ -2027,6 +2027,8 @@ window.__FIZGIG_ZH_DICT__ = {
   "Run Fizgig on a rented GPU: the Pods tab's Rent a pod (pick a card, then add a 300 GB Volume disk on RunPod's page)": "在租用的 GPU 上运行 Fizgig：「云端 Pods」页的「租用 Pod」（选一张卡，再到 RunPod 页面添加 300 GB 卷磁盘）",
   "Face close-ups, the Look Filter and likeness scores are made for people's faces. For anime, furry or drawn characters (fursuits too), pick Anime/furry/drawn for both choices here. People's sets need nothing changed. More in docs/FACE_BACKENDS.md.": "人脸特写、外观筛选与相似度评分都是为真人脸设计的。若是动漫、兽人或绘画角色（含兽装），请把这里两处都选为「动漫 / 兽人 / 绘画」。真人数据集无需改动。详见 docs/FACE_BACKENDS.md。",
   "Moves the full pictures, with their captions and masks, into a detail_masters sub-folder that never trains (it stays in the folder for making crops at other sizes). Untick and run again to move them back.": "把完整原图连同标注与掩码移入 detail_masters 子文件夹，该目录不参与训练（保留在文件夹里，用于生成其他尺寸的裁片）。取消勾选再运行一次即可移回。",
+  /* == 批量追加（batch11e.py） == */
+  "beside Start on the Training tab puts one here, and so does Continue on a run below while another trains. Each starts when the one before it finishes; one that fails, is stopped or pauses holds the queue until you press Start queue.": "会把任务排到这里；另一个任务正在训练时，对下方某个任务点「继续」也会如此。每个任务都在前一个结束后才开始；失败、被停止或暂停的任务会占住队列，直到你按「开始队列」。",
   /* @@END@@ */
 };
 
