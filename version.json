@@ -1,10 +1,10 @@
 {
-  "version": "1.1.0-test1",
-  "built": "2026-11-04 21:24:42",
-  "notes": "本地测试包",
+  "version": "1.1.0",
+  "built": "2026-11-04 21:27:44",
+  "notes": "Klein 9B + MOSS-Image 预置首发",
   "files": {
     "fizgig-zh.js": "8d4f3f5e2d331c93cdbef381f315cc065e43aa62f9c0d79bed2ab9beb3f8450e",
-    "fizgig-zh-dict.js": "b35607d8eb08cef4daa84f79d73eba1dfbb0d9c25412f8e542460c2e136c0199",
+    "fizgig-zh-dict.js": "034195c5de23b4dec0473a0bd408fd4f1d606623dbec8629dbdc2cdad861fa2e",
     "apply_zh.py": "ce332b02b1bc0c2ceab075d98acd7042a22dc1f3c3fb89fce0234c233daf8e05",
     "apply_zh_server.py": "33e9c1cf024fafde5425d853db92a03e797e233b8f89761f48cbcd1ff2ba85e7"
   }
