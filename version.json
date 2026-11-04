@@ -1,10 +1,10 @@
 {
-  "version": "1.1.2",
-  "built": "2026-11-04 21:39:46",
-  "notes": "第三轮补词：掩码/运行摘要动态值（+35 条 +13 规则）",
+  "version": "1.1.3",
+  "built": "2026-11-04 21:48:44",
+  "notes": "补页头说明段与队列说明（片段级）",
   "files": {
     "fizgig-zh.js": "8d4f3f5e2d331c93cdbef381f315cc065e43aa62f9c0d79bed2ab9beb3f8450e",
-    "fizgig-zh-dict.js": "7da112d65e92a6a737cd905e4048ba32ed2806571f0d9264933ff9db580aa85a",
+    "fizgig-zh-dict.js": "81ad8701e2ab916016779e2f59ea17f13ce08c87cca2f9fa8e16c900fcd11cb3",
     "apply_zh.py": "ce332b02b1bc0c2ceab075d98acd7042a22dc1f3c3fb89fce0234c233daf8e05",
     "apply_zh_server.py": "33e9c1cf024fafde5425d853db92a03e797e233b8f89761f48cbcd1ff2ba85e7"
   }

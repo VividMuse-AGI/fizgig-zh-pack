@@ -2014,6 +2014,19 @@ window.__FIZGIG_ZH_DICT__ = {
   "4. Edit masks": "4. 编辑掩码",
   "5. Leave these alone (optional):": "5. 保持不变的部分（可选）：",
   "6. How firmly:": "6. 强度：",
+  /* == 批量追加（batch11d.py） == */
+  "The queue, then every run you've started, newest first: how it went, its previews and checkpoints, Continue to train it on from its last save, and its settings to start again with. Below, every LoRA and fine-tune saved in Fizgig's output folders. Download sends a file to the device you're using now. Very large fine-tunes come off faster another way: on a pod, through its": "队列，以及你发起过的每一次运行（最新在前）：过程结果、预览与 checkpoint、可从上次存档继续训练，以及可再次开跑的设置。下方是 Fizgig 输出文件夹中保存的全部 LoRA 与全量微调。「下载」会把文件发送到你当前使用的设备。超大微调模型有更快的取回方式：在 Pod 上，通过其",
+  "The folder this run trains on: your pictures (or clips, or songs), each with its caption file. Pick one from": "本次运行使用的训练文件夹：你的图片（或视频、音频），每张配一个同名的标注文件。可从以下位置选择",
+  "A shortcut: the folders in /root/Fizgig/training_data, and the ones you've picked from anywhere else (outlined). Click one to make it the training folder above. For a folder that isn't listed (another drive, or a subfolder), press Choose… above; to add a new one, upload it below.": "快捷入口：/root/Fizgig/training_data 里的文件夹，以及你从其他地方选过的（带描边）。点一个即可设为上方的训练文件夹。列表里没有的（其他磁盘或子目录），请点上方「选择…」；要新增，请在下方上传。",
+  "A shortcut: the folders in your training data folder. Click one to make it the training folder above.": "快捷入口：训练数据文件夹里的各个文件夹。点一个即可设为上方的训练文件夹。",
+  "Each picture also trains as one square crop at its own scale, so brushwork and texture aren't shrunk away. The crop is at a random spot, moved off flat areas, and the same spot at every size. Run it once per folder; after that, each run makes its own crops at Start, at the size it trains at, captioned with the Style task.": "每张图还会按自身比例训练一个方形裁片，避免笔触与纹理被缩小丢失。裁片位置随机、会避开平坦区域，且各尺寸下取同一点。每个文件夹跑一次即可；之后每次运行会在「开始」阶段按训练尺寸自行裁切，并用 Style 任务打标。",
+  "Blank: the built-in choice (below)": "留空：使用内置选择（见下方）",
+  "Masks for masked training (optional)": "掩码训练用的掩码（可选）",
+  "LoRA Royale: pick the best epoch by eye.": "LoRA Royale：用眼睛挑出最好的那一轮。",
+  "The queue - open it on Runs & outputs": "队列——在「任务与输出」中打开",
+  "Run Fizgig on a rented GPU: the Pods tab's Rent a pod (pick a card, then add a 300 GB Volume disk on RunPod's page)": "在租用的 GPU 上运行 Fizgig：「云端 Pods」页的「租用 Pod」（选一张卡，再到 RunPod 页面添加 300 GB 卷磁盘）",
+  "Face close-ups, the Look Filter and likeness scores are made for people's faces. For anime, furry or drawn characters (fursuits too), pick Anime/furry/drawn for both choices here. People's sets need nothing changed. More in docs/FACE_BACKENDS.md.": "人脸特写、外观筛选与相似度评分都是为真人脸设计的。若是动漫、兽人或绘画角色（含兽装），请把这里两处都选为「动漫 / 兽人 / 绘画」。真人数据集无需改动。详见 docs/FACE_BACKENDS.md。",
+  "Moves the full pictures, with their captions and masks, into a detail_masters sub-folder that never trains (it stays in the folder for making crops at other sizes). Untick and run again to move them back.": "把完整原图连同标注与掩码移入 detail_masters 子文件夹，该目录不参与训练（保留在文件夹里，用于生成其他尺寸的裁片）。取消勾选再运行一次即可移回。",
   /* @@END@@ */
 };
 
@@ -2122,6 +2135,8 @@ window.__FIZGIG_ZH_RULES__ = [
   ["^(\\d+) files$", "$1 个文件"],
   ["^(\\d+) pictures$", "$1 张图片"],
   ["^(\\d+) of (\\d+)$", "$1 / $2"],
+  /* == 批量追加规则（batch11d.py） == */
+  ["^Trained on (.+) · ([\\d/]+ [\\d:]+) · (.+) · epoch (\\d+)/(\\d+) · loss ([\\d.]+)$", "训练于 $1 · $2 · $3 · 第 $4/$5 轮 · loss $6"],
   /* @@RULES-END@@ */
 ];
 
