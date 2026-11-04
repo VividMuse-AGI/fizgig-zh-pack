@@ -1991,6 +1991,29 @@ window.__FIZGIG_ZH_DICT__ = {
   "For previews on your Base (the SFT tick above off): the SFT look LoRA gives them much of SFT's look. Not as good as SFT itself, but a really good indicator, and previews are much quicker with no model swap. Previews only, never training. Downloaded for you the first time (about 2.1 GB).": "用于你 Base 上的预览（且上方 SFT 勾选关闭时）：SFT 外观 LoRA 能让预览获得大部分 SFT 的观感。不如 SFT 本身，但作为判断指标足够好，而且无需换模型、预览快得多。仅用于预览，从不参与训练。首次使用会自动下载（约 2.1 GB）。",
   "Greyed out: previews render on the preview model, which has its own look. Untick \"Use the SFT model for samples\" to preview on your Base with this LoRA.": "已变灰：预览正在用预览模型渲染，而它有自己的外观。取消勾选「采样使用 SFT 模型」，即可在你的 Base 上用它预览。",
   "MOSS-Image doesn't respond well to short one-line prompts, and they can make the previews look worse. Describe the picture in a few sentences: framing, light, background and detail.": "MOSS-Image 对简短的单行提示词反应不佳，还可能让预览更难看。请用几句话描述画面：构图、光线、背景与细节。",
+  /* == 批量追加（batch11c.py） == */
+  "Anime/furry/drawn (YOLO model)": "动漫 / 兽人 / 绘画（YOLO 模型）",
+  "Anime/furry/drawn characters": "动漫 / 兽人 / 绘画角色",
+  "Auto (Decide for each set)": "自动（每组单独判断）",
+  "Bring its checkpoints home": "把它的检查点取回本地",
+  "Detail crops — for a style": "细节裁片——用于风格",
+  "Masks from words with SAM 3.1": "用 SAM 3.1 按文字生成掩码",
+  "Replace masks already there": "替换已有掩码",
+  "Running avg (kohya-style)": "滑动平均（kohya 风格）",
+  "Runs lined up here, in order:": "排在这里的任务（按顺序）：",
+  "Soft edges: 0 is a hard edge": "柔和边缘：0 为硬边",
+  "The person (hair to clothes)": "整个人（从头发到衣服）",
+  "The person, not their clothes": "只要人，不要衣服",
+  "optional, e.g. glasses, phone": "可选，例如 眼镜、手机",
+  "✨ Krea 2 Slider (rank 8, 2e-4)": "✨ Krea 2 滑杆（rank 8, 2e-4）",
+  "✨ MOSS-Image Fine-tune (1e-5)": "✨ MOSS-Image 全量微调（1e-5）",
+  "Find, Replace & Add": "查找、替换与添加",
+  "1. How the masks are made": "1. 掩码如何生成",
+  "2. What the masks show": "2. 掩码显示什么",
+  "3. Options": "3. 选项",
+  "4. Edit masks": "4. 编辑掩码",
+  "5. Leave these alone (optional):": "5. 保持不变的部分（可选）：",
+  "6. How firmly:": "6. 强度：",
   /* @@END@@ */
 };
 
@@ -2085,6 +2108,20 @@ window.__FIZGIG_ZH_RULES__ = [
   ["^Subject (\\d+) - what they are:$", "主体 $1 - 是什么："],
   ["^Subject (\\d+) - what training will use:?$", "主体 $1 - 训练实际使用的词："],
   ["^Show the (\\d+) from other runs in this folder$", "显示此文件夹中来自其他任务的 $1 个"],
+  /* == 批量追加规则（batch11c.py） == */
+  ["^Loss, smoothed: ([\\d.]+) now$", "平滑 loss：当前 $1"],
+  ["^Preview on (\\d+) random pictures$", "在 $1 张随机图片上预览"],
+  ["^(\\d+) of (\\d+) pictures have a mask\\.$", "$2 张图中有 $1 张已有掩码。"],
+  ["^(\\d+) saved by (.+) in (.+), newest first\\.$", "共 $1 个，由 $2 保存在 $3，最新在前。"],
+  ["^(\\d+) steps? · lowest smoothed loss ([\\d.]+) at step (\\d+) \\(epoch (\\d+)\\)$", "$1 步 · 最低平滑 loss $2（第 $3 步，第 $4 轮）"],
+  ["^(\\d+) of (\\d+) sliders? free to roll$", "$2 个滑杆中有 $1 个可自由滚动"],
+  ["^(\\d+) subjects?$", "$1 个主体"],
+  ["^(\\d+) epochs? · (\\d+) steps · batch (\\d+) · ([\\d.]+ MP)$", "$1 轮 · $2 步 · batch $3 · $4"],
+  ["^([\\d.]+) s/it$", "$1 秒/步"],
+  ["^(\\d+) GB\\+$", "$1 GB 以上"],
+  ["^(\\d+) files$", "$1 个文件"],
+  ["^(\\d+) pictures$", "$1 张图片"],
+  ["^(\\d+) of (\\d+)$", "$1 / $2"],
   /* @@RULES-END@@ */
 ];
 
