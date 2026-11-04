@@ -1,0 +1,6 @@
+# 分发包靠 sha256 校验，任何行尾转换都会导致校验失败 → 全部强制 LF、不做转换
+*.js    text eol=lf
+*.py    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.sh    text eol=lf
