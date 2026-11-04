@@ -38,17 +38,26 @@ fizgig-zh-update --restart  # 更新后自动重启 Fizgig
 
 ## 怎么发新版
 
+一条命令（推荐）：
+
 ```bash
-# 1. 在本地汉化工作区打包（版本号建议递增，如 1.1.1）
+./publish.sh 1.1.1 "补 MOSS/Klein 家族文案"
+```
+
+它会：打包 → 同步 5 个文件 → 提交 → 推送。推送优先走 HTTPS（本机 SSH 到 GitHub 的 22/443 被代理拦截），凭据从系统凭据库读取，不写盘、不回显。
+
+手动流程（等价）：
+
+```bash
 python make_zh_pack.py 1.1.1 "补 MOSS/Klein 家族文案"
-
-# 2. 把 dist/ 里的 5 个文件同步到本仓库
-#    （或直接运行本仓库的 publish.sh <版本号> "<说明>"）
-
-# 3. 提交推送
+cp ../fizgig-zh/dist/{version.json,fizgig-zh.js,fizgig-zh-dict.js,apply_zh.py,apply_zh_server.py} .
 git add -A && git commit -m "zh 1.1.1: 补 MOSS/Klein 家族文案" && git push
 ```
 
 版本号规则：数字递增，支持预发布后缀（`1.1.0-test1 < 1.1.0`）。
+
+> ⚠️ 两个必须遵守的约束：
+> 1. **文件必须以 LF 结尾**（`.gitattributes` 已锁 `eol=lf`）——行尾一转换，sha256 就变，粉丝更新全部失败；
+> 2. **推送后要核对远端字节**：`curl -s <raw地址>/fizgig-zh-dict.js | sha256sum` 应与 `version.json` 里的值一致。
 
 > 说明：仓库内容为原创中文译文与注入脚本，Fizgig 本体（Apache-2.0）不在此仓库内。
