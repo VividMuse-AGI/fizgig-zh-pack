@@ -1,10 +1,10 @@
 {
-  "version": "1.1.0",
-  "built": "2026-11-04 21:27:44",
-  "notes": "Klein 9B + MOSS-Image 预置首发",
+  "version": "1.1.1",
+  "built": "2026-11-04 21:37:36",
+  "notes": "补 MOSS/Klein 家族与训练监控面板文案（+300 条）",
   "files": {
     "fizgig-zh.js": "8d4f3f5e2d331c93cdbef381f315cc065e43aa62f9c0d79bed2ab9beb3f8450e",
-    "fizgig-zh-dict.js": "034195c5de23b4dec0473a0bd408fd4f1d606623dbec8629dbdc2cdad861fa2e",
+    "fizgig-zh-dict.js": "fe4c83fce95dc8cf84193880d3b0a15c448d529dcc6a0063755ed1879623e7a5",
     "apply_zh.py": "ce332b02b1bc0c2ceab075d98acd7042a22dc1f3c3fb89fce0234c233daf8e05",
     "apply_zh_server.py": "33e9c1cf024fafde5425d853db92a03e797e233b8f89761f48cbcd1ff2ba85e7"
   }
