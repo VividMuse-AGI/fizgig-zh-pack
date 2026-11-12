@@ -1,10 +1,10 @@
 {
-  "version": "1.1.8",
-  "built": "2026-11-12 17:40:32",
-  "notes": "9.6.x 新文案：训练图谱 / 身份模式 / Windows 提速提示",
+  "version": "1.1.9",
+  "built": "2026-11-12 17:43:06",
+  "notes": "9.6.x 新文案补全（68 条）；修正 CRLF/LF 哈希不一致",
   "files": {
     "fizgig-zh.js": "8d4f3f5e2d331c93cdbef381f315cc065e43aa62f9c0d79bed2ab9beb3f8450e",
-    "fizgig-zh-dict.js": "15096c0c41738f9bb95694a1a5665eaeb758d35a4a85e4d52d8c5d8c39a59aeb",
+    "fizgig-zh-dict.js": "b105fad989b5aad071ad07d32447eee9a461df4cb63f5bb9881b1de110e60d96",
     "apply_zh.py": "ce332b02b1bc0c2ceab075d98acd7042a22dc1f3c3fb89fce0234c233daf8e05",
     "apply_zh_server.py": "33e9c1cf024fafde5425d853db92a03e797e233b8f89761f48cbcd1ff2ba85e7"
   }
